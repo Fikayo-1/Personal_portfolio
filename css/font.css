@@ -1,0 +1,13 @@
+
+
+/*gfont face*/
+
+@font-face{
+    font-family: "Roboto";
+    src: '../fonts/Roboto/static/Roboto_Condensed-Regular.ttf';
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: '../fonts/Poppins/Poppins-Regular.ttf';
+}

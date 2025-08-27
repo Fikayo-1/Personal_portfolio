@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root{
+    --primary-color: #4A90E2;
+    --secondary-color: #F5A623;
+    --bg-color:#495b6df5;
+    --fg: white;
+    --text-color:#333333;
+    --hover-color:#2D3748;
+
+
+/* Font family variables */
+  --roboto:"Roboto", sans-serif;
+  --poppins: "Poppins", sans-serif;
+
+}
