@@ -16,10 +16,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-area">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="" alt="logo"></a>
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +33,10 @@
                                 <a class="nav-link text-uppercase" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase"  href="./interests.html">Interests</a>
+                                <a class="nav-link text-uppercase" href="./interests.html">Interests</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase active" href="#" aria-current="page">Contact</a>
+                                <a class="nav-link text-uppercase active " href="#" aria-current="page">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -44,13 +46,44 @@
     </header>
 
 
+    <section class="contact">
+        <div>
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div> <a href="alaveslegend@gmail.com"><i class="fa-solid fa-envelope"></i>   Email</a>
+                        </div> <div><a href=""><i class="fa-brands fa-linkedin"></i>   LinkedIn</a></div>
+                        <div> <a href="https://github.com/Fikayo-1"><i class="fa-brands fa-github"></i>  Github</a></p></div>
+                        <div><a href=""><i class="fa-solid fa-location-dot"></i>  Location: Lagos, Nigeria</a></div>
+                    </div>
 
+                    <div>
+                        <form action="">
+                            <label for="name">Name: </label>
+                            <input type="text" placeholder="Name" id="name"><br>
+                            <label for="email">Email </label>
+                            <input type="text" placeholder="youremail@example.com" id="email"><br>
+                            <label for="message">Message: </label>
+                            <input type="text" placeholder="Message" id="message"><br>
+                            <button type="submit">Send</button>
+                            
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Bootstrap files -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Custom js file -->
     <script src="../js/main.js"></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>

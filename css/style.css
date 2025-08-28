@@ -1,24 +1,206 @@
 
-/* Global Css File */
-@import url(../css/global.css);
 
+/* Global css file */
+@import url(/css/global.css);
 
-.interest:not(:last-child)::after {
-  content: "|";
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #aaa;  /* softer than text so it looks like a divider */
-}
+/* Variables file */
+@import url(/css/variables.css);
 
-.header-area .navbar .navbar-brand{
-  padding: 0 5rem 0 10rem;
-}
-
+/* Navbar */
 .header-area .navbar {
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.header-area .navbar .navbar-brand img{
-  width: 8vw;
+.header-area .navbar .navbar-brand img {
+  width: 60px;
   border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+  font-family: var(--poppins);
+  font-weight: 500;
+  margin: 0 10px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+
+/* Hero section */
+.hero-section {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #000000ab  ;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero-describe {
+  margin-top: 15px;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+.hero-section {
+  padding: 5rem 0;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #4A90E2, #F5A623);
+  color: white;
+}
+.hero-describe {
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
+/* Interest page */
+.interests {
+  padding: 4rem 0;
+}
+
+.interest-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.interests .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.interests .card {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interests .card img {
+  max-width: 80px;
+  margin: 1.5rem auto 1rem;
+}
+
+.interests .card-title {
+  font-family: var(--poppins);
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.interests .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Contact Page */
+.contact {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+
+form {
+  text-align: left;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: var(--secondary-color);
+}
+
+.fa-envelope .fa-github{
+  white-space: 5px;
 }
