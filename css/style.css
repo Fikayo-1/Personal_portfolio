@@ -1,8 +1,8 @@
 /* Global css file */
-@import url(/css/global.css);
+@import url(../css/global.css);
 
 /* Variables file */
-@import url(/css/variables.css);
+@import url(../css/variables.css);
 
 /* Navbar */
 .header-area .navbar {
