@@ -1,0 +1,63 @@
+/* Make sure logo and toggler fit in one line */
+@media (max-width: 356px) {
+  .header-area .navbar .navbar-brand img {
+    width: 70px; /* shrink logo slightly */
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem; 
+    font-size: 0.9rem; /* slightly smaller */
+  }
+
+  .header-area .navbar {
+    padding: 0.5rem 1rem; /* tighter padding */
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
+    text-align: center;
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem; /* reduce from 5rem */
+  }
+
+  .hero-text p, .first, .second {
+    font-size: 1rem !important;
+  }
+
+  .hero-img {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .hero-img img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.85rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+/* For small and medium phones */
+@media (min-width: 357px) and (max-width: 768px) {
+  .header-area .navbar {
+    justify-content: space-between; /* spread logo & toggler */
+    padding: 0.5rem 1.5rem; /* increase horizontal spacing */
+  }
+
+  .header-area .navbar .navbar-brand img {
+    width: 80px; /* a bit bigger than tiny screens */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* push toggler to far right */
+  }
+}
+

@@ -72,34 +72,47 @@
   background: linear-gradient(135deg, #4a90e2, #f5a623);
   color: white;
 }
-.hero-describe {
+.hero-describe .first {
+  display: inline-block;
   font-weight: 500;
   font-size: 1.2rem;
   border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+  animation: typing 4s steps(38, end) forwards,
+             blink 0.75s step-end 6,
+             cursor-off 0.1s forwards 5s; /* 5s delay = after typing */
 }
 
+@keyframes cursor-off {
+  to { border-right: none; }
+}
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 27ch; } /* match the text length */
+}
+.hero-describe .second {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: second-typing 4s steps(38, end) forwards,
+             blink 0.75s step-end 6,
+             cursor-off 0.1s forwards 5s; /* 5s delay = after typing */
 }
 
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
+@keyframes cursor-off {
+  to { border-right: none; }
 }
+@keyframes second-typing {
+  from { width: 0; }
+  to { width: 21ch; } /* match the text length */
+}
+
 
 /* Interest page */
 .interests {
