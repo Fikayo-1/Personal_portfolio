@@ -90,7 +90,7 @@
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 27ch; } /* match the text length */
+  to { width: 28ch; } /* match the text length */
 }
 .hero-describe .second {
   display: inline-block;
@@ -110,7 +110,7 @@
 }
 @keyframes second-typing {
   from { width: 0; }
-  to { width: 21ch; } /* match the text length */
+  to { width: 22ch; } /* match the text length */
 }
 
 
